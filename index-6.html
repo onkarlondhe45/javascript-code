@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Object and Methods</title>
+</head>
+<body>
+
+<script>
+
+		document.write("<h3>*Object in JavaScript*</h3>");
+	
+		let personalDetails = {
+			firstName: "Onkar",
+			lastName: "Londhe",
+			education: "BE in Mechanical",
+			Address: {
+				village : "Manegaon",
+				tal : "Madha",
+				Dist : "Solapur",
+				pinCode : 413410
+			},
+			getFullName : function(){
+				return this.firstName + " " + this.lastName;
+			}
+		};
+		
+		document.write("First Name : ",personalDetails.firstName);
+		
+		document.write("<br>");
+		
+		document.write("Last Name : ",personalDetails.lastName);
+		
+		document.write("<br>");
+		
+		document.write("Village : ", personalDetails.Address.village +", "+ "Tal : ", personalDetails.Address.tal+", "+ "Dist : ", personalDetails.Address.Dist+", "+ "Pincode ", personalDetails.Address.pinCode);
+		
+		document.write("<br>");
+		
+		document.write("Full Name : ", personalDetails.getFullName());
+	
+	
+		document.write("<hr>");
+
+				<!-- ************************************************************************************************************* -->
+
+		document.write("<h3>*Assign Method of Object*</h3>");
+		<!-- Assign method is used to merge two object together -->
+
+		let abc = {
+			name: "Kishor",
+			city: "Pune",
+		}
+		
+		let xyz = {
+			education : "BE in Mechanical",
+			grade : "A"
+		}
+		
+
+		Object.assign(abc, xyz);
+		document.write("Name : ",abc.name+  ", " +"City : ",abc.city+  ", " +"Education : ",abc.education+  ", " +"Grade : ",abc.grade);
+			
+		document.write("<hr>");
+		
+		
+				<!-- ************************************************************************************************************* -->
+		
+		
+		
+</script>
+
+</body>
+
+</html>
