@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>String in JavaScript</title>
+</head>
+
+<body>
+	
+	
+	<script>
+		
+		<!-- String Concatnate -->
+		
+		let firstName = "Onkar";
+		let lastName = "Londhe";
+		
+		let fullName = firstName+ " " + lastName;
+		document.write(fullName);
+
+		document.write("<br>");
+
+		<!-- String length -->
+		
+		let message = "Hello World";
+		document.write(message.length);
+		
+		document.write("<br>");
+		
+		<!-- Accessign character -->
+		
+		document.write("String index 5 letter is : ",message[6]);
+		document.write("<br>");
+		document.write("String start index letter is : ",message[0]);
+		document.write("<br>");
+		document.write("String last index letter is : ",message[message.length-1]);
+		
+		document.write("<br>");
+		
+		
+		<!-- String UpperCase -->
+		
+		let name = "Shriram";
+		document.write("Upper case : ",name.toUpperCase());
+		document.write("<br>");
+		
+		document.write("Lower case : ",name.toLowerCase());
+		document.write("<br>");
+
+		
+		<!-- String Method - indexOf() -->
+		
+		let para = "hello guys i am onkar";
+		document.write(para.indexOf("onkar"));
+		
+		document.write("<br>");
+		
+		<!-- String Method - slice() -->
+		
+		document.write(para.slice(0,5));
+		
+		document.write("<br>");
+		
+		<!-- String Method - subString() -> same as slice method -->
+		<!-- String Method - substr -->
+		
+		document.write(para.substr(0,4));
+		
+		document.write("<br>");
+		
+		<!-- String Method - replace() -->
+		
+		let repl = "Hello World"
+		document.write(repl.replace("World","India"));
+		
+		document.write("<br>");
+		
+		
+		<!-- String Method - includes() -->
+		
+		let p1 = "practice makes man perfect";
+		document.write(p1.includes("perfect"));
+		
+		document.write("<br>");
+		
+		<!-- String Method - charAt() -->
+		
+		let city = "Solapur";
+		document.write(city.charAt(4));
+		
+		document.write("<br>");
+		
+		<!-- String Method - split() -->
+				
+		let abc = "hello guys i am onkar";
+		document.write(abc.split(" "));
+		
+		document.write("<br>");
+		
+		<!-- String Method -trim() -> its remove start and end space in our paragraph -->
+		
+		let xyz = " jay hind jay maharastra ";
+		document.write(xyz.trim());
+		
+		document.write("<br>");
+
+		<!-- String Method - repeat() -->
+		
+		document.write(xyz.repeat(3));
+		
+		document.write("<br>");
+		
+		<!-- String Method - startsWith() and endsWith()-->
+		
+		let mno = "jay jawan jay kisan";
+		document.write(mno.startsWith("jay"));
+		
+		document.write("<br>");
+		
+		document.write(mno.endsWith("kixsan"));
+
+		document.write("<br>");
+		
+		<!-- String Method - padStart() and padEnd() -->
+		
+		let num = "5";
+		document.write(num.padStart(3,"0"));
+		
+		document.write("<br>");
+		
+		document.write(num.padEnd(3,"0"));
+		
+		document.write("<br>");
+		
+		<!-- String Method - toString() -->
+		
+		let number = 555;
+		document.write(number.toString());
+	</script>
+	
+	
+</body>
+
+</html>
