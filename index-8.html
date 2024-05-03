@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>Let Const and var</title>
+</head>
+
+<body>
+	
+	<h3>Let, Const and Var Keyword</h3>
+	
+	<!-- SCOPE : there are three types of scope -->
+	<!-- 1.Global : global scope is accessible globally. -->
+	<!-- 2.function : function level scope only accessible within function only.-->
+	<!-- 3.block : block level scope is as same as function level scope, it is accessible within block only. -->
+	
+	<script>
+	
+		
+		let a = 10;
+		let b = 20;
+		let c = 30;
+		
+		function demo(){
+			let d = 40;
+			document.write(a+b+c+d);
+			
+			document.write("<br>");
+			
+			
+			{
+				var x = 10;
+				var y = 20;
+				let z = 30;
+			}
+			
+			document.write(x);
+			document.write(z);
+		}
+		
+		<!-- document.write(d); -->
+		demo();
+	
+	
+ 
+		
+	</script>
+</body>
+</html>
