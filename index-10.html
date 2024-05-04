@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>ES6 Feature</title>
+</head>
+
+<body>
+
+	<h3>Rest Parameters in Function (arguments)</h3>
+	
+<script>
+
+	var hobbies = ["Trekking", "Cricket","Drawing"];
+	var [first, second, ...restHobbies] = hobbies;
+	
+	document.write(first, second, restHobbies);
+	document.write("<br>");
+	
+	function addition(first,second,...numbers){
+		return numbers.reduce((previousValue, currentValue)=>{
+			return previousValue + currentValue;
+		},0) + first + second;
+	}
+	
+	let additionResult = addition(1,2,3,4,5);
+	document.write(additionResult);
+	
+	
+</script>
+
+</body>
+</html>
