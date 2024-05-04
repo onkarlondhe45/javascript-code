@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>ES6 Feature</title>
+</head>
+
+<body>
+
+	<h3>ES6 Feature</h3>
+	
+<script>
+
+	document.write("<h4>Spread Operator</h4>");
+	
+	var a = 10;
+	var b = 20;
+	
+	var c = [...[a],...[b]];
+
+	document.write(c);
+	
+	document.write("<br>");
+	
+	var list1 = ["Onkar","Kishor","Mukund","Balasaheb"];
+	var list2 = ["Akshay","Krushna","Sanket","Sagar"];
+	
+	var list = [...list1,...list2];
+	 
+	document.write(list);
+	
+	document.write("<br>");
+	
+	obj1 = {
+		firstName: "Onkar",
+		lastName: "Londhe"
+	}
+	
+	obj2 = {
+		education: "BE in Mechanical",
+		passout: "2022"
+	}
+	
+	obj = {
+		...obj1,
+		...obj2
+	}
+	
+	document.write(obj);
+	
+	
+	document.write("<h4>Symbol</h4>");
+	
+	var s = Symbol("my mobile number is : ");
+ 
+	
+	obj4 = {};
+	obj4.sub = "History";
+	obj4.score = 91;
+	obj4[s] = 9370025900;
+	
+	document.write(obj4);
+	
+	
+	obj5 = {};
+	obj5[s] = 100;
+	
+	document.write(obj5);
+	
+</script>
+
+</body>
+</html>
