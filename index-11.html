@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>JavaScript Async</title>
+</head>
+
+<body>
+
+	<h3>JavaScript Async</h3>
+	<hr>
+<script>
+
+	document.write("<h4>Callback Function</h4>");
+	
+	function multiplication(num1, num2, callback){
+		let num = num1 * num2;
+		callback(num);
+	}
+	
+	function showResult(mulResult){
+		document.write(mulResult);
+	}
+	
+	multiplication(10,10,showResult);
+
+	document.write("<br>");
+
+	function getAddress(lat, long, callback){
+		callback("Manegon");
+	}
+	
+	getAddress(198.8, 127.7, function(address){
+		document.write(address);
+	});
+	
+	document.write("<hr>");
+	
+	document.write("<h4>Promises Function</h4>");
+	
+	let p = new Promise(function(resolve, reject){
+		let age = prompt("enter your age : ");
+		if(age>18){
+			<!-- success -->
+			resolve("You are eligible for voting...");
+		}else{
+			<!-- error -->
+			reject("You are not eligible for voting...");
+		}	
+	});
+	
+	<!-- promise by using then and async&await function -->
+	
+	p.then(function(result){
+		document.write(result);
+	}).catch(function(error){
+		document.write(error);
+	});
+	
+	document.write("Hello Folks...!");
+	document.write("<br>");
+	
+	<!-- promise by using async -->	
+	<!-- async function getResult(){ -->
+		<!-- let result = await p; -->
+		<!-- document.write(result); -->
+	<!-- }; -->
+	<!-- getResult(); -->
+	
+</script>
+
+</body>
+</html>
